@@ -9,7 +9,8 @@ revolute_base (flip_base) {
 }
 robotiq_base (revolute_base) {
     joint:hingeZ
-    limits=[-1.5708, 1.5708]
+    A:<d(-90 0 0 1)>
+    limits=[0, 3.1416]
 }
 
 Include: 'robotiq_clean.g'
