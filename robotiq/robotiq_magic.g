@@ -59,6 +59,9 @@ finger1 (right_inner_finger){
 finger2 (left_inner_finger){
     Q:[.0 -.009 .025]
     shape:capsule, size:[.04, .02], color:[1. 1. 1. .2], contact:-2 }
+collision_box (robotiq_base){
+    Q:<d(180 0 1 0) d(90 0 0 1) t(0 0 -.13)>
+    shape:ssBox, size:[0.084, 0.022, 0.037, 0], color:[1. 1. 1. .2], contact:-1 }
 
 Edit right_inner_finger { limits:[-.1, .1] }        
 Edit left_inner_finger { limits:[-.1, .1] }        
